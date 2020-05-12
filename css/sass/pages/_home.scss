@@ -1,0 +1,183 @@
+.navbar-nav .active .nav-link {
+  color: $mainColor !important;
+  font-weight: bold;
+}
+.sliders {
+  overflow: hidden;
+  background-image: url(../../images/slide2.jpg);
+  background-size: cover;
+  @include overlay;
+  .overlay {
+    .carousel-inner div .lead {
+      font-size: 40px;
+      color: $overlayColor;
+      margin-bottom: 70px;
+      span {
+        background-color: $mainColor;
+        color: $overlayColor;
+        font-weight: bolder;
+        padding: 10px;
+        margin-left: 5px;
+        border-radius: 5px;
+        
+      }
+    }
+    button {
+      font-size: 40px;
+      font-weight: bolder;
+      width: 300px;
+      height: 80px;
+      &:hover {
+        color: $overlayColor;
+      }
+    }
+  }
+}
+
+.features {
+  @include fullSection;
+  i {
+    color: $mainColor;
+  }
+}
+
+.about {
+  @include fullColoredSection;
+  padding: 0;
+  .image{
+    padding: 0;
+  }
+  h2 {
+    margin-top: 30px;
+  }
+}
+
+.subscribe {
+  background-image: url('../../images/subscribe.png');
+  height: 300px;
+  @include overlay;
+  .overlay {
+    .form {
+      input {
+        color: $overlayColor;
+        background: none;
+        border: none;
+        border-bottom: 1px solid $mainColor;
+        &:focus {
+          outline-color: $mainColor;
+        }
+        &::placeholder {
+          color: $overlayColor;
+          opacity: 0.3;
+        }
+      }
+      button {
+        background-color: $mainColor;
+        color: $overlayColor;
+        border: none;
+        border-bottom: 1px solid $mainColor;
+        opacity: .5;
+        transition: all .5s ease-in-out;
+        &:hover {
+          opacity: 1;
+          color: #EEE;
+        }
+      }
+    }
+  }
+}
+
+.special {
+  @include fullSection;
+  overflow: hidden;
+  .person {
+    filter: gray;
+    -webkit-filter: grayscale(.7);
+    filter: grayscale(.7);
+    &:hover {
+      -webkit-filter: grayscale(0);
+      filter: grayscale(0);
+    }
+    border: 1px solid $mainColor;
+    .more{
+      img {
+        display: block;
+        width: 150px;
+      }
+      button {
+        width: 150px;
+      }
+    }
+    
+  }
+  
+}
+
+
+
+.testimonials {
+  @include overlay;
+  background-image: url('../../images/testimonials.jpg');
+  .inner-testimonials {
+    @include fullSection;
+    color: $overlayColor;
+    h2 {
+      color: $overlayColor;
+    }
+  }
+}
+
+
+
+
+.portifolio {
+  @include fullColoredSection;
+  height: 300px;
+}
+
+
+
+
+.contact {
+  @include overlay;
+  background-image: url('../../images/contact.jpg');
+  .in-contact {
+    @include fullSection;
+    h2 {
+      color: $overlayColor;
+    }
+    form {
+      label {
+        color: $mainColor
+      }
+      input {
+        background: none;
+        border: 2px solid $mainColor;
+        color: $overlayColor !important;
+        &:focus {
+          box-shadow: 0 0 0 0.05rem $overlayColor ;
+        }
+        &::placeholder {
+          color: $overlayColor;
+          opacity: 0.3;
+        }
+      }
+      textarea {
+        height: 124px;
+        background: none;
+        border: 2px solid $mainColor;
+        color: $overlayColor;
+        &:focus {
+          box-shadow: 0 0 0 0.05rem $overlayColor ;
+        }
+      }
+    }
+    button {
+      width: 100%;
+      border: 2px solid $mainColor;
+      font-weight: bold;
+      margin-bottom: 50px;
+    }
+  }
+  
+}

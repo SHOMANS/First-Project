@@ -1,0 +1,56 @@
+.footer {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: $footerColor;
+  bottom: 0;
+  p {
+    font-size: 20px;
+    color: $overlayColor;
+    margin: 0;
+    opacity: 0.75;
+    
+  }
+  ul {
+    margin: 0;
+    li{
+      @media (max-width: 991px) {
+        -webkit-filter: grayscale(0);
+        filter: grayscale(0);
+        opacity: 1;
+        .fa-facebook {
+          color: $facebookColor ;
+        }
+        .fa-twitter {
+          color: $twitterColor ;
+        }
+        .fa-instagram {
+          color: $instagramColor  ;
+        }
+        .fa-google-plus {
+          color: $googlePlusColor  ;
+        }
+      }
+      filter: gray;
+      -webkit-filter: grayscale(1);
+      filter: grayscale(1);
+      opacity: 0.4;
+      &:hover {
+        -webkit-filter: grayscale(0);
+        filter: grayscale(0);
+        opacity: 1;
+        .fa-facebook {
+          color: $facebookColor ;
+        }
+        .fa-twitter {
+          color: $twitterColor ;
+        }
+        .fa-instagram {
+          color: $instagramColor;
+        }
+        .fa-google-plus {
+          color: $googlePlusColor  ;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,250 @@
+extends ../layout/layout
+
+block title
+  title Shoman - Home
+
+block pageStyle
+  link(rel="stylesheet", href="css/pages/home.css")
+  link(rel="stylesheet", href="css/pasic/bootstrap-rtl.css")
+
+block body
+
+  //-Start Nav Small
+  nav(class="navbar navbar-dark bg-dark navbar-expand-lg d-block d-lg-none")
+    .container
+      h1 
+        a(class="navbar-brand" href="home-rtl.html")
+          h1 شو
+            span مان
+      button(class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation")
+        span(class="navbar-toggler-icon")
+      
+      div(class="collapse navbar-collapse" id="main")
+        ul(class="navbar-nav ml-auto")
+          li(class="nav-item active")
+            a(class="nav-link" href="home-rtl.html") الرئيسية
+          li(class="nav-item")
+            a(class="nav-link" href="about.html") معلومات
+          li(class="nav-item dropdown")
+            a(class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") Dropdown
+            div(class="dropdown-menu nav-menu" aria-labelledby="navbarDropdown")
+              a(class="dropdown-item nav-item" data-scroll='about' href="#about") تعرف علينا
+              a(class="dropdown-item nav-item" data-scroll='subscribe' href="#subscribe") اشترك للمزيد
+              a(class="dropdown-item nav-item" data-scroll='special' href="#special") شكر خاص
+              a(class="dropdown-item nav-item" data-scroll='testimonials' href="#tstimonials") ماذا قالو عنا
+              a(class="dropdown-item nav-item" data-scroll='portifolio' href="#portifolio") المعرض
+              div(class="dropdown-divider")
+              a(class="dropdown-item nav-item" data-scroll='contact' href="#contact") اتصل بنا
+          li(class="nav-item")
+            a(class="nav-link" href="index.html") Engligh
+  //-End Nav Small
+
+  //-Start Slider
+  .sliders.d-none.d-lg-block.position-relative
+    .overlay.position-absolute
+      nav(class="navbar navbar-light navbar-expand-lg")
+        .container
+          a(class="navbar-brand" href="home.html")
+            h1 شو
+              span مان
+          button(class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation")
+            span(class="navbar-toggler-icon")
+          
+          div(class="collapse navbar-collapse" id="main")
+            ul(class="navbar-nav ml-auto")
+              li(class="nav-item active")
+                a(class="nav-link" href="home-rtl.html") الرئيسية
+              li(class="nav-item")
+                a(class="nav-link" href="about.html") معلومات
+              li(class="nav-item dropdown")
+                a(class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") انزل لأسفل
+                div(class="dropdown-menu nav-menu" aria-labelledby="navbarDropdown")
+                  a(class="dropdown-item nav-item" data-scroll="about" href="#about") تعرف علينا
+                  a(class="dropdown-item nav-item" data-scroll="subscribe" href="#subscribe") اشترك للمزيد
+                  a(class="dropdown-item nav-item" data-scroll="special" href="#special") شكر خاص
+                  a(class="dropdown-item nav-item" data-scroll="testimonials" href="#testimonials") ماذا قالو عنا
+                  a(class="dropdown-item nav-item" data-scroll="portifolio" href="#portifolio") المعرض
+                  div(class="dropdown-divider")
+                  a(class="dropdown-item nav-item" href="#contact") اتصل بنا
+
+              li(class="nav-item")
+                a(class="nav-link" href="index.html") Engligh
+
+      div(id="carouselExampleIndicators" class="carousel slide" data-ride="carousel")
+        ol(class="carousel-indicators")
+          li(data-target="#carouselExampleIndicators" data-slide-to="0" class="active")
+          li(data-target="#carouselExampleIndicators" data-slide-to="1")
+          li(data-target="#carouselExampleIndicators" data-slide-to="2")
+        div(class="slider-in carousel-inner text-center")
+          div(class="slider-item carousel-item active")
+            p.lead موسيقي وعازف جيتار ،تعرف على 
+              span شومان
+            button.btn.btn-outline-success اضغط هنا 
+          div(class="slider-item carousel-item")
+            p.lead موسيقي وعازف جيتار ،تعرف على 
+              span شومان
+            button.btn.btn-outline-success اضغط هنا 
+          div(class="slider-item carousel-item")
+            p.lead موسيقي وعازف جيتار ،تعرف على 
+              span شومان
+            button.btn.btn-outline-success اضغط هنا 
+        a(class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev")
+          span(class="carousel-control-prev-icon" aria-hidden="true")
+          span(class="sr-only") السابق
+        a(class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next")
+          span(class="carousel-control-next-icon" aria-hidden="true")
+          span(class="sr-only") التالي
+  //-End Slider
+
+  //-Start Features
+  .features.text-center
+    .container
+      h2 مهارات
+      .row
+        div.col-lg.col-sm-6.mb-3.mb-lg-0
+          i.fa.fa-music.fa-3x
+          h3 Feat#1
+          p exercitationem, nobis laboriosam recusandae at cumque odit nulla, incidunt sapiente sunt.
+        div.col-lg.col-sm-6.mb-3.mb-lg-0
+          i.fa.fa-guitar.fa-3x
+          h3 Feat#2
+          p quae explicabo labore sit amet quos quia ut exercitationem qui est possimus eaque omnis!
+        div.col-lg.col-sm-6.mb-3.mb-lg-0
+          i.fa.fa-headphones.fa-3x
+          h3 Feat#3
+          p Reiciendis fuga accusantium, dignissimos eaque sapiente Reiciendis accusantium.
+        div.col-lg.col-sm-6.mb-3.mb-lg-0
+          i.fa.fa-drum.fa-3x
+          h3 Feat#4
+          p beatae quis sint quos maxime temporibus reiciendis repellat neque? Ullam iusto natus ?
+  //-End Features
+
+  //-Start about
+  .about.text-center.text-md-left#about
+    .container
+      .row
+        div.image.col-md
+          img.w-100(class="img-fluid" src="images/about.jpg")
+        div.col-md
+          h2 معلومات
+          h3 محمد شومان
+          .mb-3
+            span(class="badge badge-success mr-1") موسيقي
+            span(class="badge badge-success") مبرمج ويب
+          p Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, sunt incidunt. Eos nesciunt, iste quaerat placeat, temporibus cum obcaecati tempora, rerum necessitatibus nisi nihil eligendi voluptatum quod exercitationem quidem commodi! 
+          p Aliquid veritatis officia iste sunt eveniet quam quibusdam? Error maxime excepturi delectus cupiditate quae similique, ipsam, laborum quasi earum soluta ab qui?
+          p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi incidunt esse accusantium culpa. Nostrum culpa repudiandae nihil quibusdam possimus sapiente quas fuga aliquam eaque, hic architecto dolorum aliquid qui! Est.
+
+  //-End about
+
+  //-Start subscripe
+  .subscribe.position-relative#subscribe
+    .overlay.position-absolute
+      .container
+        .form.mx-auto.w-75
+          .row
+            input(class="col-md mb-4 mb-md-0" type="email" name="email" placeholder="سجل بريدك")
+            button.col-md اشتراك
+  //-End subscripe
+
+  //-Start Special Thanks
+  .special.text-lg-left.text-center#special
+    .container
+      h2.text-center شكر خاص
+      .row
+        .person.col-lg.col-sm-6.mb-5.mb-sm-0.mx-2.pb-2
+          .info-of.h-50
+            h3 أسامة الزيرو
+            .spans.mb-2
+              span(class="badge badge-success mr-1") #مبرمج
+            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente rem, Delectus itaque deserunt distinctio.
+          .more.text-center.h-50
+            image.rounded-circle.mx-auto.mb-3(src="images/person1.jpg")
+            button.btn.btn-success المزيد
+        .person.col-lg.col-sm-6.mb-5.mb-sm-0.mx-2.pb-2
+          .info-of.h-50
+            h3  أحمد
+            .spans.mb-2
+              span(class="badge badge-success mr-1") #مبرمج
+              span(class="badge badge-success mr-1") #مهندس
+            p Lorem, ipsum dolor sit amet consectetur adipisicing elit. a dicta adipisci illo minima provident ad iure repellendus!
+          .more.text-center.h-50
+            image.rounded-circle.mx-auto.mb-3(src="images/person2.jpg")
+            button.btn.btn-success المزيد
+        .person.col-lg.col-sm-6.mb-5.mb-sm-0.mx-2.pb-2
+          .info-of.h-50
+            h3  ابراهيم
+            .spans.mb-2
+              span(class="badge badge-success mr-1") #مبرمج
+              span(class="badge badge-success mr-1") #مدرب
+            p Lorem, ipsum dolor sit amet consectetur adipisicing elit. ducimus ipsum consequatur repellat quibusdam.
+          .more.text-center.h-50
+            image.rounded-circle.mx-auto.mb-3(src="images/person3.jpg")
+            button.btn.btn-success المزيد
+        .person.col-lg.col-sm-6.mb-5.mb-sm-0.mx-2.pb-2
+          .info-of.h-50
+            h3  سراج
+            .spans.mb-2
+              span(class="badge badge-success mr-1")  #محاسب
+            p Lorem ipsum dolor sit, amet consectetur adipisicing elit. totam laudantium minus id explicabo? Illo alias quia doloribus saepe?
+          .more.text-center.h-50
+            image.rounded-circle.mx-auto.mb-3(src="images/person4.jpg")
+            button.btn.btn-success More
+  //-End Special Thanks
+
+  //-Start testmonials
+  .testimonials.text-center#testimonials
+    .overlay
+      .container
+        .inner-testimonials
+          div(id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel")
+            div(class="carousel-inner")
+              div(class="carousel-item active")
+                h2 ابراهيم
+                b
+                  q Lorem ipsum dolor sit amet consectetur adipisicing elit. In esse voluptatem, eos voluptates, aliquam beatae repudiandae repellat eligendi, nam ea praesentium facilis eum recusandae. Neque soluta dolore magnam nemo iusto.
+              div(class="carousel-item")
+                h2 احمد
+                b
+                  q Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil facere obcaecati quae assumenda atque optio quaerat accusamus quis rerum deserunt fugiat vitae quas officiis nam, quibusdam, incidunt voluptate voluptas sint?
+              div(class="carousel-item")
+                h2 سراج
+                b
+                  q Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo assumenda ipsa doloremque voluptates similique nobis incidunt quo nisi quibusdam consequuntur eius perspiciatis ipsum nesciunt eum modi aliquam, repudiandae placeat alias.
+  //-End Testimonials
+
+  //-Start Portifolio
+  .portifolio#portifolio
+    .container
+
+
+
+
+
+
+  //-End Portifolio
+
+  //-Start Contact Us
+  .contact.position-relative#contact
+    .overlay
+      .container
+        .in-contact
+          h2.text-center اتصل بنا
+          form
+            .row
+              .col-md
+                div(class="form-group")
+                  label(for="exampleFormControlInput1") الاسم
+                  input(type="text" class="form-control" id="exampleFormControlInput1" placeholder="اسمك")
+                div(class="form-group")
+                  label(for="exampleFormControlInput1") البريد الالكتروني
+                  input(type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com")
+              .col-md  
+                div(class="form-group")
+                  label(for="exampleFormControlTextarea1") رسالتك
+                  textarea(class="form-control" id="exampleFormControlTextarea1" rows="3")
+            button.btn.btn-outline-success ارسال
+  //-End Contact Us
+
+block script
+  script(src="js/pages/home.js")

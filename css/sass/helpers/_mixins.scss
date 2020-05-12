@@ -1,0 +1,71 @@
+@mixin sections {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+@mixin h2 {
+  h2{
+    margin-bottom: 50px;
+    font-size: 40px;
+    color: $h2Color;
+  }
+}
+
+
+@mixin h3 {
+  h3{
+    margin-bottom: 20px;
+    margin-top: 30px;
+    font-size: 25px;
+    color: $h3Color;
+  }
+}
+
+@mixin p {
+  p{
+    color: $pColor;
+    line-height: $lineHeight;
+    font-size: $pFontSize;
+    margin-bottom: 20px;
+  }
+}
+
+@mixin halfSection {
+  @include sections;
+  @include h2;
+  @include p;
+}
+
+@mixin fullSection {
+  @include halfSection;
+  @include h3;
+}
+
+@mixin fullColoredSection {
+  @include fullSection;
+  background-color: $backColor;
+}
+
+%overlay {
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+
+@mixin boxSizingCover {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+@mixin overlay {
+  @include boxSizingCover;
+  .overlay {
+    @extend %overlay;
+  }
+}

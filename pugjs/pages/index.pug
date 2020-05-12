@@ -1,0 +1,249 @@
+extends ../layout/layout
+
+block title
+  title Shoman - Home
+
+block pageStyle
+  link(rel="stylesheet", href="css/pages/home.css")
+
+block body
+
+  //-Start Nav Small
+  nav(class="navbar navbar-dark bg-dark navbar-expand-lg d-block d-lg-none")
+    .container
+      h1 
+        a(class="navbar-brand" href="index.html")
+          h1 sho
+            span man
+      button(class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation")
+        span(class="navbar-toggler-icon")
+      
+      div(class="collapse navbar-collapse" id="main")
+        ul(class="navbar-nav ml-auto")
+          li(class="nav-item active")
+            a(class="nav-link" href="index.html") Home
+          li(class="nav-item")
+            a(class="nav-link" href="about.html") About
+          li(class="nav-item dropdown")
+            a(class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") Dropdown
+            div(class="dropdown-menu nav-menu" aria-labelledby="navbarDropdown")
+              a(class="dropdown-item nav-item" data-scroll='about' href="#about") About Me
+              a(class="dropdown-item nav-item" data-scroll='subscribe' href="#subscribe") Subscribe
+              a(class="dropdown-item nav-item" data-scroll='special' href="#special") Special Thanks
+              a(class="dropdown-item nav-item" data-scroll='testimonials' href="#tstimonials") What They Said
+              a(class="dropdown-item nav-item" data-scroll='portifolio' href="#portifolio") Portifolio
+              div(class="dropdown-divider")
+              a(class="dropdown-item nav-item" data-scroll='contact' href="#contact") Contact Us
+          li(class="nav-item")
+            a(class="nav-link" href="home-rtl.html") العربية
+  //-End Nav Small
+
+  //-Start Slider
+  .sliders.d-none.d-lg-block.position-relative
+    .overlay.position-absolute
+      nav(class="navbar navbar-light navbar-expand-lg")
+        .container
+          a(class="navbar-brand" href="home.html")
+            h1 sho
+              span man
+          button(class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation")
+            span(class="navbar-toggler-icon")
+          
+          div(class="collapse navbar-collapse" id="main")
+            ul(class="navbar-nav ml-auto")
+              li(class="nav-item active")
+                a(class="nav-link" href="home.html") Home
+              li(class="nav-item")
+                a(class="nav-link" href="about.html") About
+              li(class="nav-item dropdown")
+                a(class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") Dropdown
+                div(class="dropdown-menu nav-menu" aria-labelledby="navbarDropdown")
+                  a(class="dropdown-item nav-item" data-scroll="about" href="#about") About Me
+                  a(class="dropdown-item nav-item" data-scroll="subscribe" href="#subscribe") Subscribe
+                  a(class="dropdown-item nav-item" data-scroll="special" href="#special") Special Thanks
+                  a(class="dropdown-item nav-item" data-scroll="testimonials" href="#testimonials") What They Said
+                  a(class="dropdown-item nav-item" data-scroll="portifolio" href="#portifolio") Portifolio
+                  div(class="dropdown-divider")
+                  a(class="dropdown-item nav-item" href="#contact") Contact Us
+
+              li(class="nav-item")
+                a(class="nav-link" href="home-rtl.html") العربية
+
+      div(id="carouselExampleIndicators" class="carousel slide" data-ride="carousel")
+        ol(class="carousel-indicators")
+          li(data-target="#carouselExampleIndicators" data-slide-to="0" class="active")
+          li(data-target="#carouselExampleIndicators" data-slide-to="1")
+          li(data-target="#carouselExampleIndicators" data-slide-to="2")
+        div(class="slider-in carousel-inner text-center")
+          div(class="slider-item carousel-item active")
+            p.lead Is a musician and guitarest, Visit The
+              span Shoman
+            button.btn.btn-outline-success Press 
+          div(class="slider-item carousel-item")
+            p.lead Is a musician and guitarest, Visit The 
+              span Shoman
+            button.btn.btn-outline-success Press 
+          div(class="slider-item carousel-item")
+            p.lead Is a musician and guitarest, Visit The 
+              span Shoman
+            button.btn.btn-outline-success Press 
+        a(class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev")
+          span(class="carousel-control-prev-icon" aria-hidden="true")
+          span(class="sr-only") Previous
+        a(class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next")
+          span(class="carousel-control-next-icon" aria-hidden="true")
+          span(class="sr-only") Next
+  //-End Slider
+
+  //-Start Features
+  .features.text-center
+    .container
+      h2 My Features
+      .row
+        div.col-lg.col-sm-6.mb-3.mb-lg-0
+          i.fa.fa-music.fa-3x
+          h3 Feat#1
+          p exercitationem, nobis laboriosam recusandae at cumque odit nulla, incidunt sapiente sunt.
+        div.col-lg.col-sm-6.mb-3.mb-lg-0
+          i.fa.fa-guitar.fa-3x
+          h3 Feat#2
+          p quae explicabo labore sit amet quos quia ut exercitationem qui est possimus eaque omnis!
+        div.col-lg.col-sm-6.mb-3.mb-lg-0
+          i.fa.fa-headphones.fa-3x
+          h3 Feat#3
+          p Reiciendis fuga accusantium, dignissimos eaque sapiente Reiciendis accusantium.
+        div.col-lg.col-sm-6.mb-3.mb-lg-0
+          i.fa.fa-drum.fa-3x
+          h3 Feat#4
+          p beatae quis sint quos maxime temporibus reiciendis repellat neque? Ullam iusto natus ?
+  //-End Features
+
+  //-Start about
+  .about.text-center.text-md-left#about
+    .container
+      .row
+        div.image.col-md
+          img.w-100(class="img-fluid" src="images/about.jpg")
+        div.col-md
+          h2 About Me
+          h3 Mohammed Shoman
+          .mb-3
+            span(class="badge badge-success mr-1") Musisian
+            span(class="badge badge-success") Programmer
+          p Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, sunt incidunt. Eos nesciunt, iste quaerat placeat, temporibus cum obcaecati tempora, rerum necessitatibus nisi nihil eligendi voluptatum quod exercitationem quidem commodi! 
+          p Aliquid veritatis officia iste sunt eveniet quam quibusdam? Error maxime excepturi delectus cupiditate quae similique, ipsam, laborum quasi earum soluta ab qui?
+          p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi incidunt esse accusantium culpa. Nostrum culpa repudiandae nihil quibusdam possimus sapiente quas fuga aliquam eaque, hic architecto dolorum aliquid qui! Est.
+
+  //-End about
+
+  //-Start subscripe
+  .subscribe.position-relative#subscribe
+    .overlay.position-absolute
+      .container
+        .form.mx-auto.w-75
+          .row
+            input(class="col-md mb-4 mb-md-0" type="email" name="email" placeholder="Enter You Email")
+            button.col-md Subscribe
+  //-End subscripe
+
+  //-Start Special Thanks
+  .special.text-lg-left.text-center#special
+    .container
+      h2.text-center Special Thanks
+      .row
+        .person.col-lg.col-sm-6.mb-5.mb-sm-0.mx-2.pb-2
+          .info-of.h-50
+            h3 Osama Elziro
+            .spans.mb-2
+              span(class="badge badge-success mr-1") #Programmer
+            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente rem, Delectus itaque deserunt distinctio.
+          .more.text-center.h-50
+            image.rounded-circle.mx-auto.mb-3(src="images/person1.jpg")
+            button.btn.btn-success More
+        .person.col-lg.col-sm-6.mb-5.mb-sm-0.mx-2.pb-2
+          .info-of.h-50
+            h3  Ahmed Ajour
+            .spans.mb-2
+              span(class="badge badge-success mr-1") #Programmer
+              span(class="badge badge-success mr-1") #Engineer
+            p Lorem, ipsum dolor sit amet consectetur adipisicing elit. a dicta adipisci illo minima provident ad iure repellendus!
+          .more.text-center.h-50
+            image.rounded-circle.mx-auto.mb-3(src="images/person2.jpg")
+            button.btn.btn-success More
+        .person.col-lg.col-sm-6.mb-5.mb-sm-0.mx-2.pb-2
+          .info-of.h-50
+            h3  Ibrahim Alhout
+            .spans.mb-2
+              span(class="badge badge-success mr-1") #Programmer
+              span(class="badge badge-success mr-1") #Trainer
+            p Lorem, ipsum dolor sit amet consectetur adipisicing elit. ducimus ipsum consequatur repellat quibusdam.
+          .more.text-center.h-50
+            image.rounded-circle.mx-auto.mb-3(src="images/person3.jpg")
+            button.btn.btn-success More
+        .person.col-lg.col-sm-6.mb-5.mb-sm-0.mx-2.pb-2
+          .info-of.h-50
+            h3  Seraj Al-Jeldah
+            .spans.mb-2
+              span(class="badge badge-success mr-1")  #Accountant
+            p Lorem ipsum dolor sit, amet consectetur adipisicing elit. totam laudantium minus id explicabo? Illo alias quia doloribus saepe?
+          .more.text-center.h-50
+            image.rounded-circle.mx-auto.mb-3(src="images/person4.jpg")
+            button.btn.btn-success More
+  //-End Special Thanks
+
+  //-Start testmonials
+  .testimonials.text-center#testimonials
+    .overlay
+      .container
+        .inner-testimonials
+          div(id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel")
+            div(class="carousel-inner")
+              div(class="carousel-item active")
+                h2 Ibrahim
+                b
+                  q Lorem ipsum dolor sit amet consectetur adipisicing elit. In esse voluptatem, eos voluptates, aliquam beatae repudiandae repellat eligendi, nam ea praesentium facilis eum recusandae. Neque soluta dolore magnam nemo iusto.
+              div(class="carousel-item")
+                h2 Ahmed
+                b
+                  q Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil facere obcaecati quae assumenda atque optio quaerat accusamus quis rerum deserunt fugiat vitae quas officiis nam, quibusdam, incidunt voluptate voluptas sint?
+              div(class="carousel-item")
+                h2 Seraj
+                b
+                  q Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo assumenda ipsa doloremque voluptates similique nobis incidunt quo nisi quibusdam consequuntur eius perspiciatis ipsum nesciunt eum modi aliquam, repudiandae placeat alias.
+  //-End Testimonials
+
+  //-Start Portifolio
+  .portifolio#portifolio
+    .container
+
+
+
+
+
+
+  //-End Portifolio
+
+  //-Start Contact Us
+  .contact.position-relative#contact
+    .overlay
+      .container
+        .in-contact
+          h2.text-center Contact Us
+          form
+            .row
+              .col-md
+                div(class="form-group")
+                  label(for="exampleFormControlInput1") Name
+                  input(type="text" class="form-control" id="exampleFormControlInput1" placeholder="Your Name")
+                div(class="form-group")
+                  label(for="exampleFormControlInput1") Email address
+                  input(type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com")
+              .col-md  
+                div(class="form-group")
+                  label(for="exampleFormControlTextarea1") Example textarea
+                  textarea(class="form-control" id="exampleFormControlTextarea1" rows="3")
+            button.btn.btn-outline-success Send
+  //-End Contact Us
+
+block script
+  script(src="js/pages/home.js")

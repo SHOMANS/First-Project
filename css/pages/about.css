@@ -1,0 +1,94 @@
+.navbar .navbar-brand {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #28a745; }
+  .navbar .navbar-brand h1 {
+    padding-top: 3px;
+    line-height: 0;
+    font-size: 30px; }
+    .navbar .navbar-brand h1:hover {
+      color: #28a745; }
+    .navbar .navbar-brand h1 span {
+      background-color: #28a745;
+      color: #CFC;
+      padding: 1px;
+      margin-left: 2px;
+      border-radius: 3px; }
+.navbar button:focus {
+  outline: 1px solid #CFC; }
+.navbar .navbar-nav .nav-item .nav-link {
+  color: #CFC;
+  transition: all 0.1s ease-in-out; }
+.navbar .navbar-nav .nav-item:hover .nav-link {
+  color: #28a745 !important; }
+.navbar .navbar-nav .nav-menu {
+  background-color: #CFC; }
+  .navbar .navbar-nav .nav-menu div {
+    border-color: #28a745;
+    opacity: 0.3; }
+  .navbar .navbar-nav .nav-menu .nav-item:hover {
+    background-color: #28a745; }
+.navbar .navbar-nav .disabled {
+  opacity: 0.2; }
+
+body > span {
+  background-color: #28a745;
+  z-index: 99999;
+  bottom: 30px;
+  right: 50px;
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  opacity: 0.4;
+  cursor: pointer; }
+  body > span:hover {
+    opacity: 0.8; }
+  body > span i {
+    color: #CFC; }
+
+.navbar-nav .about > .nav-link {
+  color: #28a745 !important;
+  font-weight: bold; }
+
+.footer {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: #010f03;
+  bottom: 0; }
+  .footer p {
+    font-size: 20px;
+    color: #CFC;
+    margin: 0;
+    opacity: 0.75; }
+  .footer ul {
+    margin: 0; }
+    .footer ul li {
+      filter: gray;
+      -webkit-filter: grayscale(1);
+      filter: grayscale(1);
+      opacity: 0.4; }
+      @media (max-width: 991px) {
+        .footer ul li {
+          -webkit-filter: grayscale(0);
+          filter: grayscale(0);
+          opacity: 1; }
+          .footer ul li .fa-facebook {
+            color: #3b5998; }
+          .footer ul li .fa-twitter {
+            color: #38A1F3; }
+          .footer ul li .fa-instagram {
+            color: #9b3f5b; }
+          .footer ul li .fa-google-plus {
+            color: #db4a39; } }
+      .footer ul li:hover {
+        -webkit-filter: grayscale(0);
+        filter: grayscale(0);
+        opacity: 1; }
+        .footer ul li:hover .fa-facebook {
+          color: #3b5998; }
+        .footer ul li:hover .fa-twitter {
+          color: #38A1F3; }
+        .footer ul li:hover .fa-instagram {
+          color: #9b3f5b; }
+        .footer ul li:hover .fa-google-plus {
+          color: #db4a39; }

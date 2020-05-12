@@ -1,0 +1,37 @@
+doctype html
+html
+  head
+    meta(charset=UTF-8)
+    meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
+    meta(name="discription" content="this is website")
+    block title
+      title layout
+    include includs/link.pug
+    block pageStyle
+  body
+    span.scroll-top.rounded-circle.text-center
+      i.fa.fa-angle-up.fa-3x
+    block body
+      include nav.pug
+    |
+    |
+    |
+    footer.footer.text-center
+      .container
+        .row
+          p(class="col-md text-lg-left mb-3 mb-lg-0") copyright 2020 &copy;
+          ul(class="col-md list-unstyled list-inline text-lg-right")
+            li.list-inline-item
+              a(href="www.facebook.com" target="_blank")
+                i(class="fab fa-facebook fa-2x")
+            li.list-inline-item
+              a(href="www.facebook.com" target="_blank")
+                i(class="fab fa-twitter fa-2x")
+            li.list-inline-item
+              a(href="www.facebook.com" target="_blank")
+                i(class="fab fa-instagram fa-2x")
+            li.list-inline-item
+              a(href="www.facebook.com"  target="_blank")
+                i(class="fab fa-google-plus fa-2x") 
+include includs/script.pug
+block script

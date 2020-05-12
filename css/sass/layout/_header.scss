@@ -1,0 +1,52 @@
+.navbar {
+  .navbar-brand {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: $mainColor;
+    h1 {
+      padding-top: 3px;
+      line-height: 0;
+      font-size: 30px;
+      &:hover {
+        color: $mainColor;
+      }
+      span {
+        background-color: $mainColor;
+        color: $overlayColor;
+        padding: 1px;
+        margin-left: 2px;
+        border-radius: 3px;
+      }
+    }
+  }
+  button:focus{
+    outline: 1px solid $overlayColor;
+  }
+  
+  .navbar-nav {
+    .nav-item{
+      .nav-link {
+        color: $overlayColor;
+        transition: all 0.1s ease-in-out;
+      }
+    &:hover .nav-link {
+      color: $mainColor !important;
+    }
+    }
+    .nav-menu {
+      background-color: $overlayColor;
+      div {
+        border-color: $mainColor;
+        opacity: 0.3;
+      }
+      .nav-item:hover {
+        background-color: $mainColor;
+      }
+    }
+  }
+  
+
+  .navbar-nav .disabled {
+    opacity: 0.2;
+  }
+}
